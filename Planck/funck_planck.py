@@ -59,7 +59,7 @@ fig.text(
         )
 
 plt.savefig(
-             'fig_Daniel5.png',
+             'planck_fig.png',
              dpi=300,
              orientation = 'portrait',
              transparent = True,
