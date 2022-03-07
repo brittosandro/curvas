@@ -1,16 +1,18 @@
 import re
 
+
 def extrai_texto():
-    '''Essa função é utilizada para extrair do meio dos dados a informação:
-     - Current CBMC acceptance ratio:  27.52 % -.
-    A variável t denota o texto como string
+    '''
+    Essa função é utilizada para extrair do arq_dados.txt a informação:
+    - Current CBMC acceptance ratio:  27.52 % -. Observando que a porcentagem
+    sempre muda ao longo do arquivo.
     '''
 
     with open('arq_dados.txt') as t:
         arq_t = t.read()
 
-    texto_int = re.compile(r'((\w+)( )(\w+)( )(\w+)( )(\w+):(  )(\d+).(\d+)( )(%))')
-    separador = texto_int.findall(arq_t)
+    frase = re.compile(r'((\w+)( )(\w+)( )(\w+)( )(\w+):(  )(\d+).(\d+)( )(%))')
+    separador = frase.findall(arq_t)
     separador1 = [i[0] for i in separador]
 
     lista_dados = arq_t.split('\n')
@@ -24,6 +26,11 @@ def extrai_texto():
 
 
 def extrai_dados_output_eq():
+    '''
+    Essa função recebe o arquivo de output de uma simulação de equilíbrio,
+    retira os dados de cabeçalho e cria um novo arquivo chamado de
+    arq_dados.txt.
+    '''
 
     with open("B0TMC2.in.out") as f:
         arq_inf = f.read()
@@ -42,11 +49,16 @@ def extrai_dados_output_eq():
     return f
 
 def extrai_dados_output_avr():
+    '''
+    Essa função extrai os dados do arquivo de médias *.avr de saidas
+    em uma simulação DICE.
+    '''
+
     with open('outB0TMC2.avr') as f:
         arq_inf = f.read()
 
     separador1 = 'NMOVE'
-    separador2 = 'cp'
+    separador2 = 'cv_intra'
 
     string_dados = arq_inf.split(separador1)[1].split(separador2)[1]
 
@@ -55,6 +67,8 @@ def extrai_dados_output_avr():
 
     return f
 
-extrai_dados_output_eq()
-extrai_dados_output_avr()
-extrai_texto()
+if __name__ == "__main__":
+
+    extrai_dados_output_eq()
+    extrai_dados_output_avr()
+    extrai_texto()
