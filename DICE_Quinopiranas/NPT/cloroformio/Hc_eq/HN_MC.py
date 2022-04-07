@@ -23,19 +23,20 @@ sns.set(style="ticks")
 
 fig, ax = plt.subplots(2, 2, figsize=(8.9, 7.6))
 
-fig.subplots_adjust(left=0.110,
-                    right=0.965,   # {Define as distâncias entre os extremos}
-                    bottom=0.110,
-                    top=0.895,
-                    hspace=0.245,  # Organiza espaçoes entre os subplots
-                    wspace=0.140)  # Organiza espaçoes entre os subplots
+fig.subplots_adjust(left=0.105,
+                    right=0.975,   # {Define as distâncias entre os extremos}
+                    bottom=0.115,
+                    top=0.890,
+                    hspace=0.240,  # Organiza espaçoes entre os subplots
+                    wspace=0.180)  # Organiza espaçoes entre os subplots
 
 
 # ------------------- Subplot IA --------------------------------------
 ax[0, 0].plot(x, y, '#0000ff', lw=2.5)
 ax[0, 0].tick_params(labelcolor='k', labelsize='small', width=1.1)
 ax[0, 0].set_xlim(0, 60000)
-#ax[0, 0].set_ylim(0, 1.2)
+ax[0, 0].set_ylim(-7.4, -6.51)
+ax[0, 0].set_yticks(np.arange(-7.4, -6.51, 0.2))
 ax[0, 0].set_title('IA - Clorofórmio', fontsize = 'large',
                    fontweight = 'bold')
 
@@ -43,7 +44,8 @@ ax[0, 0].set_title('IA - Clorofórmio', fontsize = 'large',
 ax[0, 1].plot(x1, y1, '#008080', lw=2.5)
 ax[0, 1].tick_params(labelcolor='k', labelsize='small', width=1.1)
 ax[0, 1].set_xlim(0, 60000)
-#ax[0, 1].set_ylim(0.0, 1.4)
+ax[0, 1].set_ylim(-7.4, -6.51)
+ax[0, 1].set_yticks(np.arange(-7.4, -6.51, 0.2))
 ax[0, 1].set_title('IB - Clorofórmio', fontsize = 'large',
                    fontweight = 'bold')
 
@@ -51,14 +53,16 @@ ax[0, 1].set_title('IB - Clorofórmio', fontsize = 'large',
 ax[1, 0].plot(x2, y2, '#B22222', lw=2.5)
 ax[1, 0].tick_params(labelcolor='k', labelsize='small', width=1.1)
 ax[1, 0].set_xlim(0, 60000)
-#ax[1, 0].set_ylim(0, 1.5)
+ax[1, 0].set_ylim(-7.4, -6.51)
+ax[1, 0].set_yticks(np.arange(-7.4, -6.51, 0.2))
 ax[1, 0].set_title('IC - Clorofórmio', fontsize = 'large', fontweight = 'bold')
 
 # ------------------- Subplot ID --------------------------------------
 ax[1, 1].plot(x3, y3, '#ff0000', lw=2.5)
 ax[1, 1].tick_params(labelcolor='k', labelsize='small', width=1.1)
 ax[1, 1].set_xlim(0, 60000)
-#ax[1, 1].set_ylim(0.0, 2.1)
+ax[1, 1].set_ylim(-7.4, -6.51)
+ax[1, 1].set_yticks(np.arange(-7.4, -6.51, 0.2))
 ax[1, 1].set_title('ID - Clorofórmio', fontsize = 'large', fontweight = 'bold')
 
 fig.text(0.5,                     # Ordena Posição x
