@@ -62,8 +62,8 @@ ax[1, 0].set_title('IC - DMSO', fontsize = 'large', fontweight = 'bold')
 ax[1, 1].plot(x3, y3, '#ff0000', lw=2.5)
 ax[1, 1].tick_params(labelcolor='k', labelsize='small', width=1.1)
 ax[1, 1].set_xlim(0, 60000)
-ax[1, 1].set_ylim(1, 1.21)
-ax[1, 1].set_yticks(np.arange(1.0, 1.21, 0.05))
+ax[1, 1].set_ylim(1.3, 1.41)
+ax[1, 1].set_yticks(np.arange(1.3, 1.41, 0.03))
 ax[1, 1].set_title('ID - DMSO', fontsize = 'large', fontweight = 'bold')
 
 fig.text(0.5,                     # Ordena Posição x
