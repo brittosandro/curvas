@@ -54,7 +54,6 @@ ax[1, 0].plot(x2, y2, '#B22222', lw=2.5)
 ax[1, 0].tick_params(labelcolor='k', labelsize='small', width=1.1)
 ax[1, 0].set_xlim(0, 60000)
 ax[1, 0].set_ylim(1, 1.21)
-
 ax[1, 0].set_yticks(np.arange(1.0, 1.21, 0.05))
 ax[1, 0].set_title('IC - DMSO', fontsize = 'large', fontweight = 'bold')
 
