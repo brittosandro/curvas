@@ -82,7 +82,7 @@ fig.text(0.5,                      # Ordena Posição x
 
 fig.text(0.029,
          0.5,
-         'H$_{c}$/N (g/cm³)',
+         'Entalpia Conf. por Molécula ($kcal/mol$)',
           ha='center',
           va='center',
           fontsize = 'xx-large',
@@ -90,5 +90,5 @@ fig.text(0.029,
 
 
 
-plt.savefig('d_nmove_NpT.png', dpi=300, orientation='portrait', transparent=True, format='png')
+plt.savefig('hc_nmove_NpT.png', dpi=300, orientation='portrait', transparent=True, format='png')
 plt.show()
