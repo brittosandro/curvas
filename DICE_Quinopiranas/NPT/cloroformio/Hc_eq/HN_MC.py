@@ -82,7 +82,7 @@ fig.text(0.5,                      # Ordena Posição x
 
 fig.text(0.029,
          0.5,
-         '$H_{c}/N$ ($kJ/mol$)',
+         'Entalpia Conf. por Molécula ($kcal/mol$)',
           ha='center',
           va='center',
           fontsize = 'xx-large',
