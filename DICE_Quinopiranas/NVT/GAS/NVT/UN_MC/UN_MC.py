@@ -78,7 +78,7 @@ fig.text(0.5,                      # Ordena Posição x
 
 fig.text(0.026,
          0.5,
-         '$U/N$ ($kJ/mol$)',
+         'Energia por Molécula ($kcal/mol$)',
           ha='center',
           va='center',
           fontsize = 'xx-large',

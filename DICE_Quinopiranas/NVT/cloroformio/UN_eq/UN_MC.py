@@ -15,7 +15,7 @@ dados2 = np.loadtxt('IC_EQ_UN_nmove.dat', comments='#')
 x2 = dados2[:, 0]
 y2 = dados2[:, 1]
 
-dados3 = np.loadtxt('IB_EQ_UN_nmove.dat', comments='#')
+dados3 = np.loadtxt('ID_EQ_UN_nmove.dat', comments='#')
 x3 = dados3[:, 0]
 y3 = dados3[:, 1]
 
@@ -82,7 +82,7 @@ fig.text(0.5,                      # Ordena Posição x
 
 fig.text(0.029,
          0.5,
-         'U/N ($kJ/mol$)',
+         'Energia por Molécula ($kcal/mol$)',
           ha='center',
           va='center',
           fontsize = 'xx-large',

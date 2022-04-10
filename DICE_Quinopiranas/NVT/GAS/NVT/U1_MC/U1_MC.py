@@ -78,7 +78,7 @@ fig.text(0.5,                      # Ordena Posição x
 
 fig.text(0.026,
          0.5,
-         'U1 ($kJ/mol$)',
+         'U1 ($kcal/mol$)',
           ha='center',
           va='center',
           fontsize = 'xx-large',

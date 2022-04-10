@@ -15,7 +15,7 @@ dados2 = np.loadtxt('IC_EQ_P_nmove.dat', comments='#')
 x2 = dados2[:, 0]
 y2 = dados2[:, 1]
 
-dados3 = np.loadtxt('IB_EQ_P_nmove.dat', comments='#')
+dados3 = np.loadtxt('ID_EQ_P_nmove.dat', comments='#')
 x3 = dados3[:, 0]
 y3 = dados3[:, 1]
 
